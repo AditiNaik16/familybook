@@ -1,0 +1,9 @@
+body{
+    text-align: center;
+    background-color: lightslategray;
+}
+button{
+    font-size: 25px;
+    background-color:mintcream;
+    color:navy;
+}

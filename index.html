@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <title> Family Book </title>
+    <body>
+        <h1> Family Book </h1>
+        <hr> <hr>
+        <img id="family_photo" src="https://image.shutterstock.com/image-vector/cute-cartoon-family-colorful-clothes-260nw-278705615.jpg">
+    <h3 id="one">Abhaya</h3>
+    <button type="button" onclick="family()">Next</button>
+    <hr>
+    <script>
+        var names=[
+            "1. Abhaya Kumar Naik (My Father)",
+            "2. Deepti Kumari Patel and Adyansh Naik (My mother and my brother)",
+            "3. Aditi Naik (Me)"
+        ];
+
+        var pictures=[
+            "130721_0003.jpg",
+            "DeeptiBabu.JPG",
+            "Aditi_Naik.jpg"
+        ];
+        var i=0;
+        function family(){
+            
+            
+            i++;
+            if(i==3){
+                i=0;
+            }
+            document.getElementById("one").innerHTML=names[i];
+            document.getElementById("family_photo").src=pictures[i];
+        }
+    </script>
+    </body>
+</html>
